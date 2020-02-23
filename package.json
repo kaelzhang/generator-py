@@ -14,14 +14,19 @@
     "report:open": "open coverage/index.html"
   },
   "files": [
-    "src/"
+    "generators"
   ],
   "repository": {
     "type": "git",
     "url": "git://github.com/kaelzhang/generator-py.git"
   },
   "keywords": [
-    "generator-py"
+    "generator-py",
+    "yeoman",
+    "yeoman-generator",
+    "python",
+    "pytest",
+    "coverage"
   ],
   "engines": {
     "node": ">= 6"
@@ -38,11 +43,19 @@
     "url": "https://github.com/kaelzhang/generator-py/issues"
   },
   "devDependencies": {
-    "@ostai/eslint-config": "^3.1.0",
-    "ava": "^1.4.1",
-    "codecov": "^3.4.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-import": "^2.17.2",
-    "nyc": "^14.1.1"
+    "@ostai/eslint-config": "^3.5.0",
+    "ava": "^3.3.0",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nyc": "^15.0.0"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "common-generator-prompts": "^2.0.0",
+    "mustache": "^4.0.0",
+    "scaffold-generator": "^3.0.4",
+    "yeoman-generator": "^4.5.0",
+    "yosay": "^2.0.2"
   }
 }
