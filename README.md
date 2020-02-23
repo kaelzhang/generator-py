@@ -20,15 +20,20 @@ Yeoman generator to create a python project with test/coverage ready
 ## Install
 
 ```sh
-$ npm i generator-py
+$ npm i -g generator-py yo
 ```
 
 ## Usage
 
-```js
-const generator_py = require('generator-py')
-```
+```sh
+# It is recommanded to clone the empty repo first,
+# `generator-py` reads the git remote url and set default prompts values.
+git clone git@github.com:my-name/my-empty-repo.git
 
+cd my-empty-repo
+
+yo py
+```
 ## License
 
 [MIT](LICENSE)
