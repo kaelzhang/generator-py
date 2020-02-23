@@ -1,17 +1,13 @@
 {
   "name": "generator-py",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yeoman generator to create a python project with test/coverage ready",
   "main": "src/index.js",
   "scripts": {
-    "test": "NODE_DEBUG=generator-py nyc ava --timeout=10s --verbose",
-    "test:dev": "NODE_DEBUG=generator-py nyc ava --timeout=10s --verbose && npm run report:dev",
+    "test": "mocha",
+    "test:dev": "mocha",
     "lint": "eslint .",
-    "fix": "eslint . --fix",
-    "posttest": "npm run report",
-    "report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "report:dev": "nyc report --reporter=html && npm run report:open",
-    "report:open": "open coverage/index.html"
+    "fix": "eslint . --fix"
   },
   "files": [
     "generators"
@@ -44,11 +40,11 @@
   },
   "devDependencies": {
     "@ostai/eslint-config": "^3.5.0",
-    "ava": "^3.3.0",
-    "codecov": "^3.6.5",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.1",
-    "nyc": "^15.0.0"
+    "mocha": "^7.0.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^2.1.0"
   },
   "dependencies": {
     "chalk": "^3.0.0",

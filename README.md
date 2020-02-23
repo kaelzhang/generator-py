@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/kaelzhang/generator-py.svg?branch=master)](https://travis-ci.org/kaelzhang/generator-py)
-[![Coverage](https://codecov.io/gh/kaelzhang/generator-py/branch/master/graph/badge.svg)](https://codecov.io/gh/kaelzhang/generator-py)
+<!-- [![Coverage](https://codecov.io/gh/kaelzhang/generator-py/branch/master/graph/badge.svg)](https://codecov.io/gh/kaelzhang/generator-py) -->
 <!-- optional appveyor tst
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/kaelzhang/generator-py?branch=master&svg=true)](https://ci.appveyor.com/project/kaelzhang/generator-py)
 -->
