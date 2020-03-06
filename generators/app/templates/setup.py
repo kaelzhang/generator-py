@@ -10,6 +10,10 @@ from {{import_name}} import __version__
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+def read_requirements(filename):
+    with open(filename) as f:
+        return f.read().splitlines()
+
 settings = dict(
     name = '{{name}}',
     packages = ['{{import_name}}'],
@@ -23,6 +27,8 @@ settings = dict(
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     python_requires='>=3.7',
+    install_requires=read_requirements('requirements.txt'),
+    tests_require=read_requirements('test-requirements.txt'),
     classifiers=[
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Programming Language :: Python :: 3.7',
