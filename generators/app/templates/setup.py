@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from setuptools import setup
 
 from {{import_name}} import __version__
@@ -8,7 +9,7 @@ from {{import_name}} import __version__
 # README file and 2) it's easier to type in the README file than to put a raw
 # string in below ...
 def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+    return open(Path(__file__).parent / 'docs' / 'README.md').read()
 
 def read_requirements(filename):
     with open(filename) as f:

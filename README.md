@@ -33,7 +33,14 @@ git clone git@github.com:my-name/my-empty-repo.git
 cd my-empty-repo
 
 yo py
+
+# Install dependencies
+make install
+
+# run tests
+make test
 ```
+
 ## License
 
 [MIT](LICENSE)
