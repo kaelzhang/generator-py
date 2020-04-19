@@ -1,6 +1,6 @@
 {
   "name": "generator-py",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Yeoman generator to create a python project with test/coverage ready",
   "main": "src/index.js",
   "scripts": {
