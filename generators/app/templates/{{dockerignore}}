@@ -1,0 +1,8 @@
+*
+!{{import_name}}
+!requirements.txt
+*.pyc
+*.log.*
+*.log
+__pycache__
+*.csv

@@ -9,6 +9,7 @@ mustache.escape = v => v
 
 const DEFAULT_PROPS = {
   gitignore: '.gitignore',
+  dockerignore: '.dockerignore',
   package_json: 'package.json'
 }
 
