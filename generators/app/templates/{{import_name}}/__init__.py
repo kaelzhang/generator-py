@@ -1,2 +1,2 @@
-# The first beta version
-__version__ = '0.1.0'
+# The first alpha version
+__version__ = '0.0.1'
