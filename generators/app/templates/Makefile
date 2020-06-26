@@ -1,7 +1,8 @@
 files = {{import_name}} test *.py
+test_files = *
 
 test:
-	pytest -s -v test/test_*.py --doctest-modules --cov {{import_name}} --cov-config=.coveragerc --cov-report term-missing
+	pytest -s -v test/test_$(test_files).py --doctest-modules --cov {{import_name}} --cov-config=.coveragerc --cov-report term-missing
 
 lint:
 	flake8 $(files)
