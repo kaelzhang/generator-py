@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 from setuptools import setup
 
@@ -16,15 +15,15 @@ def read_requirements(filename):
         return f.read().splitlines()
 
 settings = dict(
-    name = '{{name}}',
-    packages = ['{{import_name}}'],
-    version = __version__,
-    author = '{{user}}',
-    author_email = '{{email}}',
-    description = ('{{description}}'),
-    license = 'MIT',
-    keywords = '{{name}}',
-    url = '{{git_home_url}}',
+    name='{{name}}',
+    packages=['{{import_name}}'],
+    version=__version__,
+    author='{{user}}',
+    author_email='{{email}}',
+    description=('{{description}}'),
+    license='MIT',
+    keywords='{{name}}',
+    url='{{git_home_url}}',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     python_requires='>=3.7',
