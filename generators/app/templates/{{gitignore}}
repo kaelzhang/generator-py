@@ -57,6 +57,8 @@ old/
 *_old/
 *_notrack/
 no_track/
+*_no_track.*
+*.no_track.*
 build/
 combo/
 reference/
