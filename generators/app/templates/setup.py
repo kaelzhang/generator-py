@@ -31,7 +31,7 @@ settings = dict(
     long_description_content_type='text/markdown',
     python_requires='>=3.7',
     install_requires=read_requirements('requirements.txt'),
-    tests_require=read_requirements('test-requirements.txt'),
+    tests_require=read_requirements('dev-requirements.txt'),
     classifiers=[
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Programming Language :: Python :: 3.7',
