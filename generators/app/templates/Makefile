@@ -5,10 +5,10 @@ test:
 	pytest -s -v test/test_$(test_files).py --doctest-modules --cov {{import_name}} --cov-config=.coveragerc --cov-report term-missing
 
 lint:
-	flake8 $(files)
+	ruff check $(files)
 
 fix:
-	autopep8 --in-place -r $(files)
+	ruff check --fix $(files)
 
 install:
 	pip install -U -r requirements.txt -r dev-requirements.txt
