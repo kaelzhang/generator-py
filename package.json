@@ -1,6 +1,6 @@
 {
   "name": "generator-py",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Yeoman generator to create a python project with test/coverage ready",
   "main": "src/index.js",
   "scripts": {
@@ -50,7 +50,7 @@
     "chalk": "^3.0.0",
     "common-generator-prompts": "^2.0.0",
     "mustache": "^4.0.0",
-    "scaffold-generator": "^3.0.4",
+    "scaffold-generator": "^3.0.7",
     "yeoman-generator": "^4.5.0",
     "yosay": "^2.0.2"
   }
