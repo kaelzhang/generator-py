@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aioretry"
+authors = [
+    {name = "Kael Zhang", email = "i+pypi@kael.me"}
+]
+description = "{{description}}"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["aioretry"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.7"
+dynamic = ['version']
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/{{user}}/{{repo}}"
+
+[project.optional-dependencies]
+dev = [
+    "codecov",
+    "coverage",
+    "ruff",
+    "pytest",
+    # "pytest-asyncio",
+    "pytest-cov",
+    "twine",
+    "mypy",
+    "build"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "{{import_name}}.__version__"}
+
+[tool.setuptools.package-data]
+{{import_name}} = ["py.typed"]
+
+[tool.mypy]
+warn_return_any = true
+ignore_missing_imports = true
+no_implicit_optional = true
+strict_optional = true

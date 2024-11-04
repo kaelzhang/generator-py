@@ -5,16 +5,19 @@ test:
 	pytest -s -v test/test_$(test_files).py --doctest-modules --cov {{import_name}} --cov-config=.coveragerc --cov-report term-missing
 
 lint:
-	ruff check $(files)
+	@echo "Running ruff..."
+	@ruff check $(files)
+	@echo "Running mypy..."
+	@mypy $(files)
 
 fix:
 	ruff check --fix $(files)
 
 install:
-	pip install -U -r requirements.txt -r dev-requirements.txt
+	pip install -U .[dev]
 
 install-all:
-	pip install -U -r requirements.txt -r dev-requirements.txt -r docs/requirements.txt
+	pip install -U .[dev,doc]
 
 report:
 	codecov
