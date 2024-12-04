@@ -24,7 +24,7 @@ report:
 
 build: {{import_name}}
 	rm -rf dist
-	python setup.py sdist bdist_wheel
+	python -m build
 
 publish:
 	make build
