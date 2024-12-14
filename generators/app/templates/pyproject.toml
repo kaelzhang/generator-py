@@ -3,14 +3,14 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aioretry"
+name = "{{name}}"
 authors = [
     {name = "Kael Zhang", email = "i+pypi@kael.me"}
 ]
 description = "{{description}}"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["aioretry"]
+keywords = ["{{name}}"]
 classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Programming Language :: Python :: 3.7",
