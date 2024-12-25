@@ -32,7 +32,7 @@ Homepage = "https://github.com/{{user}}/{{repo}}"
 
 [project.optional-dependencies]
 dev = [
-    "codecov",
+    # "codecov",
     "coverage",
     "ruff",
     "pytest",
